@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HomeActivity!</string>
+    <string name="app_name">USC Student Life Application</string>
+    <string name="tutoring_welcome">Welcome to Tutoring!</string>
+    <string name="bus_welcome">Welcome to the Bus Schedule!</string>
+
+</resources>
