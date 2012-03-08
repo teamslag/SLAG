@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/bus_layout"
+    android:id="@+id/dining_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
     <TextView
-    android:id="@+id/bus_text"
+    android:id="@+id/dining_text"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="@string/bus_welcome" >
+    android:text="@string/dining_welcome" >
     </TextView>
 </LinearLayout>
     

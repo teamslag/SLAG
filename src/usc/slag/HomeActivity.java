@@ -22,14 +22,25 @@ public class HomeActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) 
             {           
             	Intent intent = null;
-            	if(position == 0) {
+            	if(parent.getItemIdAtPosition(position) == R.drawable.athletics) {
+            		intent = new Intent(v.getContext(), AthleticsActivity.class);
+            	}
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.bus) {
             		intent = new Intent(v.getContext(), BusActivity.class);
             	}
-            	else if(position == 1) {
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.dining) {
+            		intent = new Intent(v.getContext(), DiningActivity.class);
+            	}
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.tutoring) {
             		intent = new Intent(v.getContext(), TutoringActivity.class);
             	}
-            	else {
-            		
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.map) {
+            		//TODO:intent needs to open the browser to USC map
+            		intent = new Intent(v.getContext(), MapActivity.class);
+            	}
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.email) {
+            		//TODO:intent needs to open the browser to USC email
+            		intent = new Intent(v.getContext(), EmailActivity.class);
             	}
                 startActivity(intent);
             }

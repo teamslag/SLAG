@@ -24,6 +24,18 @@
         <activity 
             android:name=".TutoringActivity">
         </activity>
+        <activity
+            android:name=".AthleticsActivity">
+        </activity>
+        <activity 
+            android:name=".DiningActivity">
+        </activity>
+        <activity 
+            android:name=".EmailActivity">
+        </activity>
+        <activity 
+            android:name=".MapActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -5,5 +5,7 @@
     <string name="app_name">USC Student Life Application</string>
     <string name="tutoring_welcome">Welcome to Tutoring!</string>
     <string name="bus_welcome">Welcome to the Bus Schedule!</string>
+    <string name="athletics_welcome">Welcome to Athletics!</string>
+    <string name="dining_welcome">Welcome to Dining!</string>
 
 </resources>

@@ -26,7 +26,7 @@ public class ImageAdapter extends BaseAdapter {
 	}
 
 	public long getItemId(int position) {
-		return 0;
+		return mThumbIds[position];
 	}
 
 	/*
@@ -36,7 +36,6 @@ public class ImageAdapter extends BaseAdapter {
 	 * Create a new ImageView for each item referenced by the Adapter
 	 */
 	public View getView(int position, View convertView, ViewGroup parent) {
-		//ImageView imageView;
 		View view = convertView;
 		if(convertView == null) {
 			LayoutInflater inflater = ((Activity)mContext).getLayoutInflater();
@@ -47,19 +46,16 @@ public class ImageAdapter extends BaseAdapter {
 			image.setImageResource(mThumbIds[position]);
 			
 		}
-		/*else {
-			imageView = (ImageView) convertView;
-		}
-		imageView.setImageResource(mThumbIds[position]);
-		*/
 		return view;
 	}
 	
 	//references to the images
 	private Integer[] mThumbIds = {
-			R.drawable.bus, R.drawable.tutoring};
+			R.drawable.athletics, R.drawable.bus, R.drawable.dining, 
+			R.drawable.email, R.drawable.map, R.drawable.tutoring};
 	
 	private String[] iconNames = {
-			"Bus Schedule", "Tutoring"};
+			"Athletics", "Bus Schedule", "Dining",
+			"Email", "Map", "Tutoring"};
 
 }
