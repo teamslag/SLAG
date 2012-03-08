@@ -56,6 +56,6 @@ public class ImageAdapter extends BaseAdapter {
 	
 	private String[] iconNames = {
 			"Athletics", "Bus Schedule", "Dining",
-			"Email", "Map", "Tutoring"};
+			"Student Email", "Campus Map", "Tutoring"};
 
 }
