@@ -36,12 +36,21 @@ public class HomeActivity extends Activity {
             		intent = new Intent(v.getContext(), TutoringActivity.class);
             	}
             	else if(parent.getItemIdAtPosition(position) == R.drawable.map) {
-            		intent = new Intent(Intent.ACTION_VIEW, 
-            				Uri.parse("http://www.sc.edu/cgi-bin/uscmap/uscmap.cgi?type=number&data=112"));
+<<<<<<< HEAD
+            		//TODO:intent needs to open the browser to USC map
+            		intent = new Intent(v.getContext(), MapActivity.class);
             	}
             	else if(parent.getItemIdAtPosition(position) == R.drawable.email) {
-            		intent = new Intent(Intent.ACTION_VIEW, 
-            				Uri.parse("https://outlook.com/email.sc.edu"));
+            		//TODO:intent needs to open the browser to USC email
+            		intent = new Intent(v.getContext(), EmailActivity.class);
+=======
+            		//TODO:intent needs to open the browser to USC map
+            		intent = new Intent(v.getContext(), MapActivity.class);
+            	}
+            	else if(parent.getItemIdAtPosition(position) == R.drawable.email) {
+            		//TODO:intent needs to open the browser to USC email
+            		intent = new Intent(v.getContext(), EmailActivity.class);
+>>>>>>> origin/master
             	}
                 startActivity(intent);
             }
